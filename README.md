@@ -1,4 +1,5 @@
-# Exome data analysis: variants inspection
+# $${\color{lightblue}SNPs/Indels \space inspection \space from \space exome \space sequencing \space data }$$
+
 ### How to discriminate true variants from exome sequencing results
 
 ### Overview
