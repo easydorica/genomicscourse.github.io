@@ -1,3 +1,6 @@
+# Exome data analysis: variants inspection
+### How to discriminate true variants from exome sequencing results
+
 ### Overview
 
 In this section we will be looking at how IGV can be used for visualizing
