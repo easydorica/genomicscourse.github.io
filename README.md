@@ -52,8 +52,7 @@ The following figures depict several frequently occurring artifacts that can be 
 
 <a id="item-two"></a> 
 ### IGV settings and operations
-
-This manual refers to the local installation of IGV version 2.13.3. You may have a different version, with no or only slightly different features that should not affect the content of this workshop. If, for any reason, it is problematic to run IGV locally, you can open your browser and go to: https://igv.org/app/. 
+Open your browser and go to [IGV web App ](https://igv.org/app/). 
 Here are some instructions on the basic use of IGV (list numbers point to Figure 2, Figure 3, Figure 4).
 
 Settings
