@@ -55,7 +55,8 @@ The following figures depict several frequently occurring artifacts that can be 
 Open your browser and go to [IGV web App ](https://igv.org/app/). Right-click on the link to open it in a new window. *(It runs in a web browser and requires no downloads)*
 
 **Settings**
-1. Load Human (GRCh38/hg38) genome assembly
-Note: IGV loads Human (GRCh37/hg19) by default, but we need a more recent version of the human genome (GRCh38/hg38). If the drop-down menu displays only GRCh37/hg19, select “More…” and look for Human GRCh38/hg38 in the opening window.
-2. Click on “View” in the IGV upper menu bar and select “Preferences”, then “Alignments” in the opening window. Among the many options displayed, set “Visibility range threshold (kb)” to 5000 and select “Show soft-clipped bases”.
+1. **Load Human (GRCh37/hg19) genome assembly
+Click on Genome and from the drop-down menu select Human (GRCh37/hg19).
+
+3. Click on “View” in the IGV upper menu bar and select “Preferences”, then “Alignments” in the opening window. Among the many options displayed, set “Visibility range threshold (kb)” to 5000 and select “Show soft-clipped bases”.
 
