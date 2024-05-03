@@ -17,7 +17,7 @@ Computational Genomics, IRCCS Azienda Ospedaliero-Universitaria di Bologna
 **TABLE OF CONTENTS:**
  - [Introduction](#item-one)
  - [IGV settings and operations](#item-two)
- - [Second Item](#item-three)
+ - [Load aligned sequence data](#item-three)
 
 <a id="item-one"></a> 
 ### Introduction  
@@ -56,7 +56,19 @@ Open your browser and go to [IGV web App ](https://igv.org/app/). Right-click on
 
 **Settings**
 1. **Load Human (GRCh37/hg19) genome assembly
-Click on Genome and from the drop-down menu select Human (GRCh37/hg19).
+Click on Genome and from the drop-down menu select Human (GRCh37/hg19).**
 
-3. Click on “View” in the IGV upper menu bar and select “Preferences”, then “Alignments” in the opening window. Among the many options displayed, set “Visibility range threshold (kb)” to 5000 and select “Show soft-clipped bases”.
+2. To upload tracks on IGV, click on “Traks” in the IGV upper bar menu and select “Local file” from the same drop-down menu following the instructions given case by case in this manual.
+3. To navigate to specific genomic regions, type the region coordinates (e.g., chr1:100000-200000) or the gene name directly in the search box and then zoom in, zoom out with the `+` `-` bar or by clicking and dragging on the genomic coordinates.
+
+<a id="item-three"></a> 
+### Load aligned sequence data
+Tracks for this exercise are in the PROBAND1 folder.
+**Select both files: `proband.bam` and `proband.bam.bai`**
+
+**In text box type the gene name *B4GALNT1***
+IGV will look up the genomic coordinates for the gene and set the viewing region accordingly.
+*Q.1.1: What are the genomic coordinates for B4GALNT1 gene?*
+*Q1.2. On which chromosome arm is the RASAL1 gene located?*
+
 
