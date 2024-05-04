@@ -2,6 +2,7 @@
 Federica Isidori (bosco@aosp.bo.it)  
 Computational Genomics, IRCCS Azienda Ospedaliero-Universitaria di Bologna  
 ---
+
 Medical Genomics, Bachelor Degree in Genomics, University of Bologna  
 Prof. Tommaso Pippucci  
 
@@ -102,6 +103,10 @@ At each base that the read sequence mismatches the reference, IGV uses color m
 ![Fig.8](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/c1a42ad4-d906-43ad-817a-8adf56bd0502)
 **Fig.8**
 
+| ❓         |
+|:---------------------------|
+| **Q1.1**: What are the genomic coordinates for *B4GALNT1* gene? |
+| **Q1.2**: On which chromosome arm is the *RASAL1* gene located? |
 
 > [!IMPORTANT]
 > **Q1.1**: What are the genomic coordinates for *B4GALNT1* gene?  
