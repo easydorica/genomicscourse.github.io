@@ -11,7 +11,7 @@ Prof. Tommaso Pippucci
 
 **READ ME FIRST**
 -	Actions you need to perform are indicated in bold
--	Questions are designated by “Q” and are marked by the 'important' alert.
+-	Questions are designated by “Q” and are marked by 'question mark' icon.
 -	Screenshots are just examples, your specific output may look slightly different.
 -	For this workshop you require:
 -	This manual
@@ -108,15 +108,12 @@ At each base that the read sequence mismatches the reference, IGV uses color m
 > **❓ Questions**
 >
 > **Q1.1**: What are the genomic coordinates for *B4GALNT1* gene?  
-> **Q1.2**: On which chromosome arm is the *RASAL1* gene located? 
-
-> [!IMPORTANT]
-> **Q1.1**: What are the genomic coordinates for *B4GALNT1* gene?  
 > **Q1.2**: On which chromosome arm is the *RASAL1* gene located?  
 
 **Enter the genomic coordinate: chr6:150209805**
 
-> [!IMPORTANT]
+> **❓ Questions**
+> 
 > **Q1.3**: Is a variant reported at this position? If so, what type of variant is it (SNV or InDels)?  
 > **Q1.4**: If any variant is present, what do you think about it? Can be considered true or not? Why?  
 
@@ -126,26 +123,49 @@ At each base that the read sequence mismatches the reference, IGV uses color m
 
 **Enter this genomic interval: chr12:40876455-40876798**
 
-> [!IMPORTANT]
+> **❓ Questions**
+> 
 > **Q1.5**: There are many variants in this region. What are the allelic fractions of variants inside the region? Are the allelic fractions suggestive of real heterozygous variants?  
 
 Although most of the reads is gray, some are entirely displayed in different colors. You can click on any read to visualize its mapping quality among other features of the read and its mate. 
 
-> [!IMPORTANT]
+> **❓ Questions**
+> 
 > **Q1.6**: Do you notice some read with low mapping quality?  
-> **Q1.7**: What is their mapping quality?
-> **Q1.8**: In conclusion, how would you consider these variants, as real or artifacts?
+> **Q1.7**: What is their mapping quality?  
+> **Q1.8**: In conclusion, how would you consider these variants, as real or artifacts?  
 
 **Enter this genomic interval: chr8:7419310-7433920**
 
-> [!IMPORTANT]
-> **Q1.9**: Considering the mapping quality of the reads, how would you describe this region?
-> **Q1.10**: Look at variant chr8:7429933:C-T; how would you consider it, as real or artifacts?
+> **❓ Questions**
+> 
+> **Q1.9**: Considering the mapping quality of the reads, how would you describe this region?  
+> **Q1.10**: Look at variant chr8:7429933:C-T; how would you consider it, as real or artifacts?  
 
-**Enter in the text box this genomic coordinate: chr12:6436665. Next, click on the gear icon to the right of the alignment track and choose "Show soft clips", to display soft clipped bases in different colors, and "Clour by: read strand", to distinguish reads by their orientation. Red reads are in the forward orientation, and blue reads are in the reverse orientation.**  
+**Enter in the text box this genomic coordinate: chr12:6436665. Next, click on the gear icon to the right of the alignment track and choose "Show soft clips", to display soft clipped bases in different colors, and flag "Clour by: read strand", to distinguish reads by their orientation. Red reads are in the forward orientation, and blue reads are in the reverse orientation.**  
 
-> [!IMPORTANT]
-> **Q1.11**: Is the “T” likely a valid SNV? What evidence suggests it is or isn’t?
+> **❓ Questions**
+> 
+> **Q1.11**: Click on coverage track in the entered position (between the center lines). How many reads support the alternative allele C?
+> **Q1.12**: Is the “C” likely a valid SNV? What evidence suggests it is or isn’t?
+
+**Navigate to position: chr12:113565675**
+
+> **❓ Questions**
+>
+> **Q1.13**: What is the genotype of the proband here?
+> **Q1.14**: Is the “A” likely a valid SNV? What evidence suggests it is or isn’t?
+
+**Navigate to position: : chr12:58022561**
+ 
+> **❓ Questions**
+>
+> **Q1.15**: What is the coverage in this position and what are the genotype of proband?
+> **Q1.16**: Assuming that the proband has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has a compatible genotype?
+> **Q1.17**: What do you think is the disease phenotype potentially associated with this SNV (chr12:58022561-C-T)?  
+
+> _**NOTE**_  
+>  You can open an Internet browser and go to [OMIM database](https://www.omim.org/) to see the diseases associated with the gene of interest.
 
 
 
