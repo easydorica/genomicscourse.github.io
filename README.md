@@ -55,6 +55,7 @@ The following figures depict several frequently occurring artifacts that can be 
 
 **Fig.3**: Erroneous alignments in low-complexity regions (repeated regions in reference genome "TTTTT.."). In this case, reads erroneously showing a single-base deletion (horizontal black line) at a T-homopolymer are enriched in the proband. Some reads supporting insertions (purple bar) are also seen.
 
+-----
 <a id="item-two"></a> 
 ### IGV settings and operations
 Open your browser and go to [IGV web App ](https://igv.org/app/). Right-click on the link to open it in a new window. *(It runs in a web browser and requires no downloads)*
@@ -66,9 +67,9 @@ Click on Genome and from the drop-down menu select Human (GRCh37/hg19).**
 3. To navigate to specific genomic regions, type the region coordinates (e.g., chr1:100000-200000) or the gene name directly in the search box and then zoom in, zoom out with the `+` `-` bar or by clicking and dragging on the genomic coordinates.
 4. **Flag the button "Center line" on the top right bar**
 
-
+-----
 <a id="item-three"></a> 
-### CASE1 
+### <code style="color : cyan">CASE1</code>   
 **Load aligned sequence data**  
 Tracks for this exercise are in the PROBAND1 folder.  
 **Select both files: `proband.bam` and `proband.bam.bai`**  
@@ -147,26 +148,30 @@ Although most of the reads is gray, some are entirely displayed in different col
 > **❓ Questions**
 > 
 > **Q1.11**: Click on coverage track in the entered position (between the center lines). How many reads support the alternative allele C?  
-> **Q1.12**: Is the “C” likely a valid SNV? What evidence suggests it is or isn’t?  
+> **Q1.12**: Is the “C” likely a valid SNV? What evidence suggests it is or isn’t?
+> **Q1.13**: What is the name of the observed condition?
 
 **Navigate to position: chr12:113565675**  
 
 > **❓ Questions**
 >
-> **Q1.13**: What is the genotype of the proband here?  
-> **Q1.14**: Is the “A” likely a valid SNV? What evidence suggests it is or isn’t?  
+> **Q1.14**: What is the genotype of the proband here?  
+> **Q1.15**: Is the “A” likely a valid SNV? What evidence suggests it is or isn’t?  
 
 **Navigate to position: : chr12:58022561**
  
 > **❓ Questions**
 >
-> **Q1.15**: What is the coverage in this position and what are the genotype of proband?  
-> **Q1.16**: Assuming that the proband has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has a compatible genotype?  
-> **Q1.17**: What do you think is the disease phenotype potentially associated with this SNV (chr12:58022561-C-T)?  
+> **Q1.16**: What is the coverage in this position and what are the genotype of proband?  
+> **Q1.17**: Assuming that the proband has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has a compatible genotype?  
+> **Q1.18**: What do you think is the disease phenotype potentially associated with this SNV (chr12:58022561-C-T)?  
 
 > _**NOTE**_  
->  You can open an Internet browser and go to [OMIM database](https://www.omim.org/) to see the diseases associated with the gene of interest.
+>  You can open an Internet browser and go to [OMIM database](https://www.omim.org/) to see the diseases associated with the gene of interest.  
 
+-----
+<a id="item-four"></a> 
+### <code style="color : cyan">CASE2</code>   
 
 
 
