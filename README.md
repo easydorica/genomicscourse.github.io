@@ -126,10 +126,13 @@ Although most of the reads is gray, some are entirely displayed in different col
 
 > [!IMPORTANT]
 > **Q1.6**: Do you notice some read with low mapping quality?  
-> **Q1.7**: What is the mapping quality of the green coloured read?
+> **Q1.7**: What is their mapping quality?
+> **Q1.8**: In conclusion, how would you consider these variants, as real or artifacts?
 
+**Enter this genomic interval: chr8:7419310-7433920**
 
-
+> [!IMPORTANT]
+> **Q1.9**: Considering the mapping quality of the reads, how would you describe this region?
 
 
 
