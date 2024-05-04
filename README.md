@@ -135,33 +135,33 @@ Although most of the reads is gray, some are entirely displayed in different col
 > **Q1.7**: What is their mapping quality?  
 > **Q1.8**: In conclusion, how would you consider these variants, as real or artifacts?  
 
-**Enter this genomic interval: chr8:7419310-7433920**
+**Enter this genomic interval: chr8:7419310-7433920**  
 
 > **❓ Questions**
 > 
 > **Q1.9**: Considering the mapping quality of the reads, how would you describe this region?  
 > **Q1.10**: Look at variant chr8:7429933:C-T; how would you consider it, as real or artifacts?  
 
-**Enter in the text box this genomic coordinate: chr12:6436665. Next, click on the gear icon to the right of the alignment track and choose "Show soft clips", to display soft clipped bases in different colors, and flag "Clour by: read strand", to distinguish reads by their orientation. Red reads are in the forward orientation, and blue reads are in the reverse orientation.**  
+**Enter in the text box this genomic coordinate: chr12:6436665. Next, click on the gear icon to the right of the alignment track and choose "Show soft clips", to display soft clipped bases in different colors, and flag "Clour by: read strand", to distinguish reads by their orientation.** Red reads are in the forward orientation, and blue reads are in the reverse orientation.**  
 
 > **❓ Questions**
 > 
-> **Q1.11**: Click on coverage track in the entered position (between the center lines). How many reads support the alternative allele C?
-> **Q1.12**: Is the “C” likely a valid SNV? What evidence suggests it is or isn’t?
+> **Q1.11**: Click on coverage track in the entered position (between the center lines). How many reads support the alternative allele C?  
+> **Q1.12**: Is the “C” likely a valid SNV? What evidence suggests it is or isn’t?  
 
-**Navigate to position: chr12:113565675**
+**Navigate to position: chr12:113565675**  
 
 > **❓ Questions**
 >
-> **Q1.13**: What is the genotype of the proband here?
-> **Q1.14**: Is the “A” likely a valid SNV? What evidence suggests it is or isn’t?
+> **Q1.13**: What is the genotype of the proband here?  
+> **Q1.14**: Is the “A” likely a valid SNV? What evidence suggests it is or isn’t?  
 
 **Navigate to position: : chr12:58022561**
  
 > **❓ Questions**
 >
-> **Q1.15**: What is the coverage in this position and what are the genotype of proband?
-> **Q1.16**: Assuming that the proband has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has a compatible genotype?
+> **Q1.15**: What is the coverage in this position and what are the genotype of proband?  
+> **Q1.16**: Assuming that the proband has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has a compatible genotype?  
 > **Q1.17**: What do you think is the disease phenotype potentially associated with this SNV (chr12:58022561-C-T)?  
 
 > _**NOTE**_  
