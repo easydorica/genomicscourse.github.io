@@ -1,4 +1,5 @@
 # <code style="color : blue">SNVs/Indels inspection from exome sequencing data</code>  
+
 Federica Isidori (bosco@aosp.bo.it)  
 Computational Genomics, IRCCS Azienda Ospedaliero-Universitaria di Bologna  
 ---
@@ -60,10 +61,11 @@ Open your browser and go to [IGV web App ](https://igv.org/app/). Right-click on
 
 **Settings**
 1. **Load Human (GRCh37/hg19) genome assembly  
-Click on Genome and from the drop-down menu select Human (GRCh37/hg19).**
-
-2. To upload tracks on IGV, click on “Traks” in the IGV upper bar menu and select “Local file” from the same drop-down menu following the instructions given case by case in this manual.
+Click on Genome and from the drop-down menu select Human (GRCh37/hg19).**  
+2. To upload tracks on IGV, click on “Traks” in the IGV upper bar menu and select “Local file” from the same drop-down menu following the instructions given case by case in this manual.  
 3. To navigate to specific genomic regions, type the region coordinates (e.g., chr1:100000-200000) or the gene name directly in the search box and then zoom in, zoom out with the `+` `-` bar or by clicking and dragging on the genomic coordinates.
+4. **Flag the button "Center line" on the top right bar**
+
 
 <a id="item-three"></a> 
 ### CASE1 
@@ -86,7 +88,7 @@ Here is a quick summary of the generic information displayed in IGV:
 
 3. **Coverage track**. The coverage track displays the depth of the reads at each position as a grey bar chart; e.g. if the coverage of a genomic position is 100X , this means the base was sequenced 100 times.
 View count details of a position by clicking over the coverage bar. The box that appears provides further information for the position taken in consideration. In the example in Fig.6, there are 302 reads and all nucleotides at this position are “T”.
-If a nucleotide differs from the reference sequence in the reads, IGV colors the bar in proportion to the read count of each base (A, C, G, T).
+If a nucleotide differs from the reference sequence in the reads, IGV colors the bar in proportion to the read count of each base (A=green, C=blue, G=orange, T=red). If a sufficient number of mismatches pile up on the same position, the corresponding bar in the coverage profile suggests the presence of a variant, showing the colors of both alleles proportional to the respective allelic fractions. As an example, go to position chr12:113537773. You can see how C>T mismatches pile up on this position. Click on the corresponding bar in the coverage profile. You can see how C and T fractions are well balanced (C=47% and T=53%), suggesting a possible heterozygous variant. Go then to position chr12:40869452. Here, a G>T mismatch is present on the 100% of the reads, consistent with a possible homozygous variant.  
 
 ![Fig.6](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/98722810-eb5c-4601-b568-cf32428b45ef)
 **Fig.6**
@@ -138,8 +140,12 @@ Although most of the reads is gray, some are entirely displayed in different col
 
 > [!IMPORTANT]
 > **Q1.9**: Considering the mapping quality of the reads, how would you describe this region?
-> 
+> **Q1.10**: Look at variant chr8:7429933:C-T; how would you consider it, as real or artifacts?
 
+**Enter in the text box this genomic coordinate: chr12:6436665. Next, click on the gear icon to the right of the alignment track and choose "Show soft clips", to display soft clipped bases in different colors, and "Clour by: read strand", to distinguish reads by their orientation. Red reads are in the forward orientation, and blue reads are in the reverse orientation.**  
+
+> [!IMPORTANT]
+> **Q1.11**: Is the “T” likely a valid SNV? What evidence suggests it is or isn’t?
 
 
 
