@@ -1,4 +1,5 @@
-# $${\color{blue}SNVs/Indels \space inspection \space from \space exome \space sequencing \space data }$$
+# $${\color{blue}SNVs/Indels \ inspection \ from \ exome \ sequencing \ data }$$
+# <code style="color : blue">SNVs/Indels \ inspection \ from \ exome \ sequencing \ data</code>  
 Federica Isidori (bosco@aosp.bo.it)  
 Computational Genomics, IRCCS Azienda Ospedaliero-Universitaria di Bologna
 
