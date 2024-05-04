@@ -7,7 +7,7 @@ Computational Genomics, IRCCS Azienda Ospedaliero-Universitaria di Bologna
 
 **READ ME FIRST**
 -	Actions you need to perform are indicated in bold
--	Questions are designated by “Q” and are in italics.
+-	Questions are designated by “Q” and are marked by the 'important' alert.
 -	Screenshots are just examples, your specific output may look slightly different.
 -	For this workshop you require:
 -	This manual
@@ -68,8 +68,43 @@ Tracks for this exercise are in the PROBAND1 folder.
 **Select both files: `proband.bam` and `proband.bam.bai`**
 
 **In text box type the gene name *B4GALNT1***
-IGV will look up the genomic coordinates for the gene and set the viewing region accordingly.
-*Q.1.1: What are the genomic coordinates for B4GALNT1 gene?*
-*Q1.2. On which chromosome arm is the RASAL1 gene located?*
+IGV will look up the genomic coordinates for the gene (Fig.4) and set the viewing region accordingly.
+
+![Fig.4](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/cc69dbd1-3690-4302-8e6a-3e1a6a6b2b2b)
+**Fig.4**
+
+Here is a quick summary of the generic information displayed in IGV:
+1. In the navigation box we now find the **genomic coordinates** of the gene.
+2. **Chromosome ideogram**. The red bar on the chromosome ideogram indicates the position of the gene along the chromosome.  
+
+![Fig.5](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/7398e5e9-9d6c-467b-b118-735feca6be6d)
+**Fig.5**
+
+3. **Coverage track**. The coverage track displays the depth of the reads at each position as a grey bar chart; e.g. if the coverage of a genomic position is 100X , this means the base was sequenced 100 times.
+View count details of a position by clicking over the coverage bar. The box that appears provides further information for the position taken in consideration. In the example in Fig.6, there are 302 reads and all nucleotides at this position are “T”.
+If a nucleotide differs from the reference sequence in the reads, IGV colors the bar in proportion to the read count of each base (A, C, G, T).
+
+![Fig.6](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/98722810-eb5c-4601-b568-cf32428b45ef)
+**Fig.6**
+
+4. This section give an overview of the **alignment track**. The reads are represented by grey bars stacked on top of each other, where they are aligned to the reference genome. The reads are pointed to indicate their orientation (i.e. the forward strand or the reverse strand). 
+Reads that are displayed with light grey borders and transparent or in other colors, have bad mapping quality. 
+At each base that the read sequence mismatches the reference, IGV uses color markers to highlight potential genetic alterations in reads against a reference sequence. By clicking over a specific grey bar you can obtain additional information about the specific read: the read name, alignment quality, CIGAR and information about its mate read. 
+
+![Fig.7](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/3860b027-d078-4f13-9d80-62c5825f2798)
+**Fig.7**
+
+5. **Gene track**. Graphical representation of the gene. Genes are represented as lines and boxes. Lines represent intronic regions, and boxes represent exonic regions. The arrows indicate the direction/strand of transcription for the gene. When an exon box become narrower in height, this indicates a UTR. In this section can be loaded other annotation tracks (e.g. dbSNP database of common polymorphisms or Clinvar database for interpretations of clinical significance of variants)
+
+![Fig.8](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/c1a42ad4-d906-43ad-817a-8adf56bd0502)
+**Fig.8**
+
+
+> [!IMPORTANT]
+> **Q1.1**: What are the genomic coordinates for *B4GALNT1* gene?  
+> **Q1.2**: On which chromosome arm is the *RASAL1* gene located?
+
+
+
 
 
