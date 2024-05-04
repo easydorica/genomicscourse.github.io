@@ -1,7 +1,9 @@
-# $${\color{blue}SNVs/Indels \ inspection \ from \ exome \ sequencing \ data }$$
-# <code style="color : blue">SNVs/Indels \ inspection \ from \ exome \ sequencing \ data</code>  
+# <code style="color : blue">SNVs/Indels inspection from exome sequencing data</code>  
 Federica Isidori (bosco@aosp.bo.it)  
-Computational Genomics, IRCCS Azienda Ospedaliero-Universitaria di Bologna
+Computational Genomics, IRCCS Azienda Ospedaliero-Universitaria di Bologna  
+---
+Medical Genomics, Bachelor Degree in Genomics, University of Bologna  
+Prof. Tommaso Pippucci  
 
 ---
 
@@ -18,7 +20,7 @@ Computational Genomics, IRCCS Azienda Ospedaliero-Universitaria di Bologna
 **TABLE OF CONTENTS:**
  - [Introduction](#item-one)
  - [IGV settings and operations](#item-two)
- - [Load aligned sequence data](#item-three)
+ - [CASE 1](#item-three)
 
 <a id="item-one"></a> 
 ### Introduction  
@@ -56,18 +58,19 @@ The following figures depict several frequently occurring artifacts that can be 
 Open your browser and go to [IGV web App ](https://igv.org/app/). Right-click on the link to open it in a new window. *(It runs in a web browser and requires no downloads)*
 
 **Settings**
-1. **Load Human (GRCh37/hg19) genome assembly
+1. **Load Human (GRCh37/hg19) genome assembly  
 Click on Genome and from the drop-down menu select Human (GRCh37/hg19).**
 
 2. To upload tracks on IGV, click on “Traks” in the IGV upper bar menu and select “Local file” from the same drop-down menu following the instructions given case by case in this manual.
 3. To navigate to specific genomic regions, type the region coordinates (e.g., chr1:100000-200000) or the gene name directly in the search box and then zoom in, zoom out with the `+` `-` bar or by clicking and dragging on the genomic coordinates.
 
 <a id="item-three"></a> 
-### Load aligned sequence data
-Tracks for this exercise are in the PROBAND1 folder.
-**Select both files: `proband.bam` and `proband.bam.bai`**
+### CASE1 
+**Load aligned sequence data**  
+Tracks for this exercise are in the PROBAND1 folder.  
+**Select both files: `proband.bam` and `proband.bam.bai`**  
 
-**In text box type the gene name *B4GALNT1***
+**In text box type the gene name *B4GALNT1***  
 IGV will look up the genomic coordinates for the gene (Fig.4) and set the viewing region accordingly.
 
 ![Fig.4](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/cc69dbd1-3690-4302-8e6a-3e1a6a6b2b2b)
@@ -102,7 +105,31 @@ At each base that the read sequence mismatches the reference, IGV uses color m
 
 > [!IMPORTANT]
 > **Q1.1**: What are the genomic coordinates for *B4GALNT1* gene?  
-> **Q1.2**: On which chromosome arm is the *RASAL1* gene located?
+> **Q1.2**: On which chromosome arm is the *RASAL1* gene located?  
+
+**Enter the genomic coordinate: chr6:150209805**
+
+> [!IMPORTANT]
+> **Q1.3**: Is a variant reported at this position? If so, what type of variant is it (SNV or InDels)?  
+> **Q1.4**: If any variant is present, what do you think about it? Can be considered true or not? Why?  
+
+> _**NOTE**_  
+> Look at the sequence of the reference genome close to the entered position!! 
+
+
+**Enter this genomic interval: chr12:40876455-40876798**
+
+> [!IMPORTANT]
+> **Q1.5**: There are many variants in this region. What are the allelic fractions of variants inside the region? Are the allelic fractions suggestive of real heterozygous variants?  
+
+Although most of the reads is gray, some are entirely displayed in different colors. You can click on any read to visualize its mapping quality among other features of the read and its mate. 
+
+> [!IMPORTANT]
+> **Q1.6**: Do you notice some read with low mapping quality?  
+> **Q1.7**: What is the mapping quality of the green coloured read?
+
+
+
 
 
 
