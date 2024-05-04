@@ -15,7 +15,7 @@ Prof. Tommaso Pippucci
 -	Screenshots are just examples, your specific output may look slightly different.
 -	For this workshop you require:
 -	This manual
-- Files in following folder: SNVs_exomes
+- Files in following folder: [MG11-Data](https://drive.google.com/drive/folders/1W4WXehFBSqqjLBdD9G954fP2O4GIBxR8).
 - Software: Integrative Genomics Viewer (IGV), an Internet browser
 
 ---
@@ -71,7 +71,7 @@ Click on Genome and from the drop-down menu select Human (GRCh37/hg19).**
 <a id="item-three"></a> 
 ### <code style="color : cyan">CASE1</code>   
 **Load aligned sequence data**  
-Tracks for this exercise are in the PROBAND1 folder.  
+Tracks for this exercise are in the [CASE_1](https://drive.google.com/drive/folders/108gpwtgKoURepJL2BAvL3t7gF0LlcseD) folder.  
 **Select both files: `proband.bam` and `proband.bam.bai`**  
 
 **In text box type the gene name *B4GALNT1***  
@@ -172,6 +172,10 @@ Although most of the reads is gray, some are entirely displayed in different col
 -----
 <a id="item-four"></a> 
 ### <code style="color : cyan">CASE2</code>   
+**Load aligned sequence data**  
+Tracks for this exercise are in the [CASE_2](https://drive.google.com/drive/folders/1b44my9SCzrpKZHiwjEgPiBJTKrl6qEKN) folder.  
+**Select all files: `proband.bam`, `proband.bai`, `father.bam`, `father.bai`, `mother.bam`, `mother.bai`**  
+
 
 
 
