@@ -176,6 +176,10 @@ Although most of the reads is gray, some are entirely displayed in different col
 Tracks for this exercise are in the [CASE_2](https://drive.google.com/drive/folders/1b44my9SCzrpKZHiwjEgPiBJTKrl6qEKN) folder.  
 **Select all files: `proband.bam`, `proband.bai`, `father.bam`, `father.bai`, `mother.bam`, `mother.bai`**  
 
-A patient referred for Nocturnal Frontal Lobe Epilepsy (NFLE) had exome performed and no causative SNV or InDel was found. The exome was also searched for CNVs.
+Now we will work on sequencing data, extracted from real family 
+cases that had both exome sequencing and SNP-array or genome sequencing performed as part of research projects. The goal is to experience strengths and weaknesses of exome-based CNV detection directly from practical situations.
+A patient referred for Nocturnal Frontal Lobe Epilepsy (NFLE) had exome performed in trio with parents.
+Generally, NFLE is an epilepsy with an Autosomal Dominant (AD) inheritance, a type of Mendelian inheritance where the mutation of just one of the two alleles of a gene (heterozygosity) is enough to trigger the onset of the disease. Therefore, AD diseases are transmitted from parent to child, with a 1/2 probability that the affected parent will pass the mutated gene copy to a child.
 
+However, in the case of our patient (Figure 2), neither parent is ill. Therefore, neither the father nor the mother carries the mutation that causes the disease.
 
