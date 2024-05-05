@@ -69,7 +69,7 @@ Click on Genome and from the drop-down menu select Human (GRCh37/hg19).**
 
 -----
 <a id="item-three"></a> 
-### <code style="color : cyan">CASE1</code>   
+### <code style="color : blue">CASE1</code>   
 **Load aligned sequence data**  
 Tracks for this exercise are in the [CASE_1](https://drive.google.com/drive/folders/108gpwtgKoURepJL2BAvL3t7gF0LlcseD) folder.  
 **Select both files: `proband.bam` and `proband.bam.bai`**  
@@ -89,7 +89,7 @@ Here is a quick summary of the generic information displayed in IGV:
 
 3. **Coverage track**. The coverage track displays the depth of the reads at each position as a grey bar chart; e.g. if the coverage of a genomic position is 100X , this means the base was sequenced 100 times.
 View count details of a position by clicking over the coverage bar. The box that appears provides further information for the position taken in consideration. In the example in Fig.6, there are 302 reads and all nucleotides at this position are “T”.
-If a nucleotide differs from the reference sequence in the reads, IGV colors the bar in proportion to the read count of each base (A=green, C=blue, G=orange, T=red). If a sufficient number of mismatches pile up on the same position, the corresponding bar in the coverage profile suggests the presence of a variant, showing the colors of both alleles proportional to the respective allelic fractions. As an example, go to position chr12:113537773. You can see how C>T mismatches pile up on this position. Click on the corresponding bar in the coverage profile. You can see how C and T fractions are well balanced (C=47% and T=53%), suggesting a possible heterozygous variant. Go then to position chr12:40869452. Here, a G>T mismatch is present on the 100% of the reads, consistent with a possible homozygous variant.  
+If a nucleotide differs from the reference sequence in the reads, IGV colors the bar in proportion to the read count of each base (A=green, C=blue, G=orange, T=red). If a sufficient number of mismatches pile up on the same position, the corresponding bar in the coverage profile suggests the presence of a variant, showing the colors of both alleles proportional to the respective allelic fractions. As an example, **go to position chr12:113537773. You can see how C>T mismatches pile up on this position. Click on the corresponding bar in the coverage profile. You can see how C and T fractions are well balanced (C=47% and T=53%), suggesting a possible heterozygous variant. Go then to position chr12:40869452. Here, a G>T mismatch is present on the 100% of the reads, consistent with a possible homozygous variant.**  
 
 ![Fig.6](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/98722810-eb5c-4601-b568-cf32428b45ef)
 **Fig.6**
@@ -122,13 +122,13 @@ At each base that the read sequence mismatches the reference, IGV uses color m
 > Look at the sequence of the reference genome close to the entered position!! 
 
 
-**Enter this genomic interval: chr12:40876455-40876798**
+**Enter this genomic interval: chr12:40876455-40876798**  
 
-> **❓ Questions**
+> **❓ Questions**  
 > 
 > **Q1.5**: There are many variants in this region. What are the allelic fractions of variants inside the region? Are the allelic fractions suggestive of real heterozygous variants?  
 
-Although most of the reads is gray, some are entirely displayed in different colors. You can click on any read to visualize its mapping quality among other features of the read and its mate. 
+Although most of the reads is gray, some are entirely displayed in different colors. You can click on any read to visualize its mapping quality among other features of the read and its mate.  
 
 > **❓ Questions**
 > 
@@ -138,27 +138,27 @@ Although most of the reads is gray, some are entirely displayed in different col
 
 **Enter this genomic interval: chr8:7419310-7433920**  
 
-> **❓ Questions**
+> **❓ Questions**  
 > 
 > **Q1.9**: Considering the mapping quality of the reads, how would you describe this region?  
 > **Q1.10**: Look at variant chr8:7429933:C-T; how would you consider it, as real or artifacts?  
 
-**Enter in the text box this genomic coordinate: chr12:6436665. Next, click on the gear icon to the right of the alignment track and choose "Show soft clips", to display soft clipped bases in different colors, and flag "Clour by: read strand", to distinguish reads by their orientation.** Red reads are in the forward orientation, and blue reads are in the reverse orientation.**  
+**Enter in the text box this genomic coordinate: chr12:6436665. Next, click on the gear icon to the right of the alignment track and choose "Show soft clips", to display soft clipped bases in different colors, and flag "Clour by: read strand", to distinguish reads by their orientation.** Red reads are in the forward orientation, and blue reads are in the reverse orientation.   
 
 > **❓ Questions**
 > 
 > **Q1.11**: Click on coverage track in the entered position (between the center lines). How many reads support the alternative allele C?  
-> **Q1.12**: Is the “C” likely a valid SNV? What evidence suggests it is or isn’t?
-> **Q1.13**: What is the name of the observed condition?
+> **Q1.12**: Is the “C” likely a valid SNV? What evidence suggests it is or isn’t?  
+> **Q1.13**: What is the name of the observed condition?  
 
 **Navigate to position: chr12:113565675**  
 
-> **❓ Questions**
+> **❓ Questions**  
 >
 > **Q1.14**: What is the genotype of the proband here?  
 > **Q1.15**: Is the “A” likely a valid SNV? What evidence suggests it is or isn’t?  
 
-**Navigate to position: : chr12:58022561**
+**Navigate to position: chr12:58022561**  
  
 > **❓ Questions**
 >
@@ -171,11 +171,11 @@ Although most of the reads is gray, some are entirely displayed in different col
 
 -----
 <a id="item-four"></a> 
-### <code style="color : cyan">CASE2</code>   
+### <code style="color : blue">CASE2</code>   
 **Load aligned sequence data**  
 Tracks for this exercise are in the [CASE_2](https://drive.google.com/drive/folders/1b44my9SCzrpKZHiwjEgPiBJTKrl6qEKN) folder.  
 **Select all files: `proband.bam`, `proband.bai`, `father.bam`, `father.bai`, `mother.bam`, `mother.bai`**  
 
-
+A patient referred for Nocturnal Frontal Lobe Epilepsy (NFLE) had exome performed and no causative SNV or InDel was found. The exome was also searched for CNVs.
 
 
