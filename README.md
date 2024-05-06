@@ -15,14 +15,15 @@ Prof. Tommaso Pippucci
 -	Screenshots are just examples, your specific output may look slightly different.
 -	For this workshop you require:
 -	This manual
-- Files in following folder: [MG11-Data](https://drive.google.com/drive/folders/1W4WXehFBSqqjLBdD9G954fP2O4GIBxR8).
-- Software: Integrative Genomics Viewer (IGV), an Internet browser
+- Files in following folder: [MG11-Data](https://drive.google.com/drive/folders/1W4WXehFBSqqjLBdD9G954fP2O4GIBxR8). *We recommend downloading all the data to your local PC before uploading them to IGV*  
+- Software: an Internet browser, Integrative Genomics Viewer (IGV) and Variant Effect Predictor (VEP)
 
 ---
 **TABLE OF CONTENTS:**
  - [Introduction](#item-one)
  - [IGV settings and operations](#item-two)
  - [CASE 1](#item-three)
+ - [CASE 2](#item-four)
 
 <a id="item-one"></a> 
 ### Introduction  
