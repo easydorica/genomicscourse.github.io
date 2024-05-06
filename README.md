@@ -195,9 +195,9 @@ We can assume that the mutation causing the disease occurs **de novo** in our pr
 
 > **❓ Questions**  
 >
-> **Q2.1: Has the variant in this position already been reported in any public database? If so, which one?**
+> **Q2.1: Has the variant in this position already been reported in any public database? If so, which one?**  
 > **Q2.2: What is the mother, father, and proband's coverage at the mutated position?**  
-> **Q2.3: What is the mother, father, and proband's genotype?**
+> **Q2.3: What is the mother, father, and proband's genotype?**  
 
 ||Coverage|Genotype| 
 |:---:|---:|:---| 
@@ -205,14 +205,17 @@ We can assume that the mutation causing the disease occurs **de novo** in our pr
 |father||| 
 |mother||| 
 
-We observe another variant within the same CHRNA4 gene. This variant is identified as rs1044393. 
+> **Q2.4: Is the “A” likely a valid SNV? What evidence suggests it is or isn’t?**  
+
+
 **Now enter another variant within the same *CHRNA4* gene. This variant is identified as rs1044393. Type in the text box the SNP name.**  
 
 > **❓ Questions**  
 >
-> **Q2.4: How would you describe this variant at the DNA level? Specify chromosome, start postion, end position, reference nucleotide, and alternative nucleotide**  
-> **Q2.5: What is the mother, father, and proband's genotype?**  
-> **Q2.6: Are the genotypes compatible with the disease described in this family (NFLE)? Why?**  
+> **Q2.5: How would you describe this variant at the DNA level? Specify chromosome, start postion, end position, reference nucleotide, and alternative nucleotide**
+> **Q2.6: What is the population allele frequency and its protein consequence?**  
+> **Q2.7: What is the mother, father, and proband's genotype?**  
+> **Q2.8: Are the genotypes compatible with the disease described in this family (NFLE)? Why?**  
 
 ||Genotype|Compatible (yes/no)| 
 |:---:|---:|:---| 
@@ -223,14 +226,34 @@ We observe another variant within the same CHRNA4 gene. This variant is identifi
 In order to be able to study the mutations and evaluate their effect on the protein, and thus the possible link to the disease under investigation, we need to know their location on the mRNA and protein. Several methods can be used to do this, which is called the **variant annotation process**.  
 In this exercise we will use the Variant Effect Predictor (VEP) software, which from the genomic coordinates of a mutation, can give us a lot of information, in addition to its position in mRNA and protein.  
 
-**Open your browser and go to [VEP](http://grch37.ensembl.org/Homo_sapiens/Tools/VEP). Right-click on the link to open it in a new window.  
-Fill in the “Input” form as follows (Fig.10-.**  
+**Open your browser and go to [VEP](http://grch37.ensembl.org/Homo_sapiens/Tools/VEP).** Right-click on the link to open it in a new window.  
+**Fill in the “Input” form as follows (Fig.10-Fg.13).**  
 
-![Fig.10](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/870c508c-2f20-4322-83e8-ed241bbb4121)
+![Fig.10](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/8f716f12-6b98-4f81-9337-ca05c45a991c)  
 **Fig.10**
 
 > _**NOTE**_  
 > In the “Either paste data” field, write the genomic coordinates (one per line) of the two *CHRNA4* variants reported in the previous steps of the exercise, with the following formatting:  
 > chromosome [space] start position [space] end position [space] reference/alternative (e.g. 1 818046 818046 T/C).
 
+**Expand the “Identifiers", "Variants and frequency data" (Fig.11), “Additional annotations” (Fig.12) and “Filtering Options” (Fig.13) menus by clicking on the `+` symbol and fill in the mask as shown below.**  
 
+![Fig.11](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/a8e0b13c-c6a4-4599-95b9-a2056f1e6697)
+**Fig.11**
+
+![Fig.12](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/508f29f8-89e2-4168-abac-469f8acffe5b)
+**Fig.12**
+
+![Fig.13](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/8c723839-7ef7-4d9b-9ed6-c0ba1ec95259)
+**Fig.13**
+
+**Start the annotation process by clicking on `RUN`.**  
+**On the next page, wait until the green “Done” symbol appears, then click on “View results.”**
+
+> **❓ Questions**
+> 
+> **Q2.9: What is the standard nomenclature for the mutations at both the cDNA and protein levels in the canonical transcript?**  
+> **Q2.10: What is the effects predicted by Polyphen2?**  
+> **Q2.11: What do you think is the variant that shows the highest impact?**  
+> **Q2.12: What is its associated phenotype?**
+> **Q2.13: In conclusion, do you think that the variant causing the disease in our family has been identified?**  
