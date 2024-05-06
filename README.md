@@ -110,8 +110,8 @@ In this section can be loaded other annotation tracks (e.g. dbSNP database of co
 
 > **❓ Questions**
 >
-> **Q1.1: What are the genomic coordinates for *B4GALNT1* gene?**
-> **Q1.2: How many exons are there in the main *B4GALNT1* transcript NM_001276468.2?**
+> **Q1.1: What are the genomic coordinates for *B4GALNT1* gene?**  
+> **Q1.2: How many exons are there in the main *B4GALNT1* transcript NM_001276468.2?**  
 > **Q1.3: On which chromosome arm is the *RASAL1* gene located?**  
 
 **Enter the genomic coordinate: chr6:150209805**
