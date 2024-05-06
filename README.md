@@ -30,7 +30,7 @@ Prof. Tommaso Pippucci
 Exome sequencing is a method that enables the selective sequencing of the exonic regions of a genome - that is the transcribed parts of the genome present in mature mRNA, including protein-coding sequences.
 Thus, the exome represents only 1% of the human genome, but has been estimated to harbor up to 85% of all disease-causing variants.
 
-Exome sequencing, thus, offers an affordable alternative to whole-genome sequencing in the diagnosis of genetic disease, while still covering far more potential disease-causing variant sites than genotyping arrays. This is of special relevance in the case of rare genetic diseases, for which the causative variants may occur at too low a frequency in the human population to be included on genotyping arrays.
+Exome sequencing, thus, offers an affordable alternative to whole-genome sequencing in the diagnosis of genetic disease, while still covering far more potential disease-causing variant sites than genotyping arrays. This is of special relevance in the case of rare genetic diseases, for which the causative variants may occur at too low frequency in the human population to be included on genotyping arrays.
 
 Variant calling is a complex process that involves numerous steps, which can be grouped into three main stages:
 - Mapping reads against the reference genome
