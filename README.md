@@ -63,9 +63,9 @@ Open your browser and go to [IGV web App ](https://igv.org/app/). Right-click on
 **Settings**
 1. **Load Human (GRCh37/hg19) genome assembly  
 Click on Genome and from the drop-down menu select Human (GRCh37/hg19).**  
-2. To upload tracks on IGV, click on “Traks” in the IGV upper bar menu and select “Local file” from the same drop-down menu following the instructions given case by case in this manual.  
+2. To upload tracks on IGV, click on “Traks” in the IGV upper bar menu and select “Local file” from the same drop-down menu following the instructions given case by case in this manual. At the end of first exercise, you can open a new window [IGV web App ](https://igv.org/app/) and start the next exercise.  
 3. To navigate to specific genomic regions, type the region coordinates (e.g., chr1:100000-200000) or the gene name directly in the search box and then zoom in, zoom out with the `+` `-` bar or by clicking and dragging on the genomic coordinates.
-4. **Flag the button "Center line" on the top right bar**
+6. **Flag the button "Center line" on the top right bar**
 
 -----
 <a id="item-three"></a> 
@@ -162,7 +162,7 @@ Although most of the reads is gray, some are entirely displayed in different col
  
 > **❓ Questions**
 >
-> **Q1.16: What is the coverage in this position and what are the genotype of proband?**  
+> **Q1.16: What is the coverage in this position and what is the genotype of proband?**  
 > **Q1.17: Assuming that the proband has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has a compatible genotype?**  
 > **Q1.18: What do you think is the disease phenotype potentially associated with this SNV (chr12:58022561-C-T)?**  
 
@@ -175,11 +175,49 @@ Although most of the reads is gray, some are entirely displayed in different col
 **Load aligned sequence data**  
 Tracks for this exercise are in the [CASE_2](https://drive.google.com/drive/folders/1b44my9SCzrpKZHiwjEgPiBJTKrl6qEKN) folder.  
 **Select all files: `proband.bam`, `proband.bai`, `father.bam`, `father.bai`, `mother.bam`, `mother.bai`**  
+> _**NOTE**_  
+> All BAM files are alligned to the Human reference GRCh37/hg19
 
-Now we will work on sequencing data, extracted from real family 
-cases that had both exome sequencing and SNP-array or genome sequencing performed as part of research projects. The goal is to experience strengths and weaknesses of exome-based CNV detection directly from practical situations.
-A patient referred for Nocturnal Frontal Lobe Epilepsy (NFLE) had exome performed in trio with parents.
-Generally, NFLE is an epilepsy with an Autosomal Dominant (AD) inheritance, a type of Mendelian inheritance where the mutation of just one of the two alleles of a gene (heterozygosity) is enough to trigger the onset of the disease. Therefore, AD diseases are transmitted from parent to child, with a 1/2 probability that the affected parent will pass the mutated gene copy to a child.
+We will now analyze BAM files generated from trio-based whole-exome sequencing conducted on a family. The proband in this family was referred due to Nocturnal Frontal Lobe Epilepsy (NFLE); an epilepsy with an Autosomal Dominant (AD) inheritance, where the mutation of just one of the two alleles of a gene (heterozygosity) is enough to trigger the onset of the disease. Therefore, AD diseases are transmitted from parent to child, with a 1/2 probability that the affected parent will pass the mutated gene copy to a child.
+However, in our case (Fig. 9), neither parent is affected. Therefore, neither the father nor the mother carries the mutation that causes the disease.  
+We can assume that the mutation causing the disease occurs **de novo** in our proband. The process of finding a de novo mutation involves sequencing the **trio** (the patient and their parents) and then comparing the patient's genomic sequence to the parents' in order to identify mutational events that are unique to the patient.  
 
-However, in the case of our patient (Figure 2), neither parent is ill. Therefore, neither the father nor the mother carries the mutation that causes the disease.
+![Fig.9](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/535e0c74-1271-4abe-85ef-490ada753cf9)  
+**Fig.9**
+
+**Load the annotation track for the dbSNP database of known common polymorphisms. Select Tracks > Variants and then select Common SNPs (150).** The dbSNP track is at the bottom of the IGV window. Coloured bars represent known SNPs.
+> _**NOTE**_  
+> Clicking on a SNP will display a window containing more details about the SNP including the rs code, the consequence (Func) and population allele frequencies (AlleleFreqs).
+
+**Load the annotation track for ClinVar database that archives and aggregates information about relationships among variation and human disease. Select Tracks > Local file... and then select [clinvar.CHRNA4.bed](https://drive.google.com/file/d/1qWwiBYNGl-eQWgkvQXS5S20eynS9DbT-/view?usp=drive_link).** The clinvar track is at the bottom of the IGV window. Blue bars represent known SNPs.  
+
+**In text box type the genomic coordinate: chr20:61981912**
+
+> **❓ Questions**  
+>
+> **Q2.1: Has the variant in this position already been reported in any public database? If so, which one?**
+> **Q2.2: What is the mother, father, and proband's coverage at the mutated position?**  
+> **Q2.3: What is the mother, father, and proband's genotype?**
+
+||Coverage|Genotype| 
+|:---:|---:|:---| 
+|**proband**||| 
+|father||| 
+|mother||| 
+
+We observe another variant within the same CHRNA4 gene. This variant is identified as rs1044393. 
+**Now enter another variant within the same *CHRNA4* gene. This variant is identified as rs1044393. Type in the text box the SNP name.**  
+
+> **❓ Questions**  
+>
+> **Q2.4:
+> **Q2.5: What is the mother, father, and proband's genotype?**  
+> **Q2.6: Are the genotypes compatible with the disease described in this family? Why?**
+
+||Genotype|Compatible (yes/no)| 
+|:---:|---:|:---| 
+|**proband**||| 
+|father||| 
+|mother||| 
+
 
