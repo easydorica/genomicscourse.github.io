@@ -11,7 +11,7 @@ Prof. Tommaso Pippucci
 
 **READ ME FIRST**
 -	Actions you need to perform are indicated in bold
--	Questions are designated by “Q” and are marked by 'question mark' icon.
+-	Questions are designated by “Q” and 'question mark' icon.
 -	Screenshots are just examples, your specific output may look slightly different.
 -	For this workshop you require:
 -	This manual
@@ -50,7 +50,7 @@ The following figures depict several frequently occurring artifacts that can be 
 
 ![Fig.2](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/a4858d34-1d97-456b-9d74-d7cb371a0bba)
 
-**Fig.2**: Strand bias artefacts. Variant-supporting reads are on the reverse strand (blue), whereas reference-supporting reads are equally represented on both strands.  
+**Fig.2**: Strand bias artefacts. Variant-supporting reads are on the forward strand (red), whereas reference-supporting reads are equally represented on both strands.  
 
 ![Fig.3](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/8ad79f7c-e562-417a-b06a-0db41232d625)
 
@@ -66,7 +66,7 @@ Open your browser and go to [IGV web App ](https://igv.org/app/). Right-click on
 Click on Genome and from the drop-down menu select Human (GRCh37/hg19).**  
 2. To upload tracks on IGV, click on “Traks” in the IGV upper bar menu and select “Local file” from the same drop-down menu following the instructions given case by case in this manual. At the end of first exercise, you can open a new window [IGV web App ](https://igv.org/app/) and start the next exercise.  
 3. To navigate to specific genomic regions, type the region coordinates (e.g., chr1:100000-200000) or the gene name directly in the search box and then zoom in, zoom out with the `+` `-` bar or by clicking and dragging on the genomic coordinates.
-6. **Flag the button "Center line" on the top right bar**
+6. **Once upload the BAM files, flag the button "Center line" on the top right bar**
 
 -----
 <a id="item-three"></a> 
@@ -97,27 +97,29 @@ If a nucleotide differs from the reference sequence in the reads, IGV colors the
 
 [4] This section give an overview of the **alignment track**. The reads are represented by grey bars stacked on top of each other, where they are aligned to the reference genome. The reads are pointed to indicate their orientation (i.e. the forward strand or the reverse strand). 
 Reads that are displayed with light grey borders and transparent or in other colors, have bad mapping quality. 
-At each base that the read sequence mismatches the reference, IGV uses color markers to highlight potential genetic alterations in reads against a reference sequence. By clicking over a specific grey bar you can obtain additional information about the specific read: the read name, alignment quality, CIGAR and information about its mate read.  
+At each base that the read sequence mismatches the reference, IGV uses color markers to highlight potential genetic alterations in reads against a reference sequence. By clicking over a specific grey bar you can obtain additional information about the specific read: the read name, alignment quality, CIGAR and information about its mate read. Scroll down to see all the alligned reads.  
 
 ![Fig.7](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/3860b027-d078-4f13-9d80-62c5825f2798)
 **Fig.7**  
 
-[5] **Gene track**. Graphical representation of the gene. Genes are represented as lines and boxes. Lines represent intronic regions, and boxes represent exonic regions. The arrows indicate the direction/strand of transcription for the gene. When an exon box become narrower in height, this indicates a UTR. In this section can be loaded other annotation tracks (e.g. dbSNP database of common polymorphisms or Clinvar database for interpretations of clinical significance of variants)  
+[5] **Gene track**. Graphical representation of the gene and the different transcripts. Genes are represented as lines and boxes. Lines represent intronic regions, and boxes represent exonic regions. The arrows indicate the direction/strand of transcription for the gene. When an exon box become narrower in height, this indicates a UTR. Clicking on a specific gene transcript track will display a window containing more details.
+In this section can be loaded other annotation tracks (e.g. dbSNP database of common polymorphisms or Clinvar database for interpretations of clinical significance of variants).  
 
 ![Fig.8](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/c1a42ad4-d906-43ad-817a-8adf56bd0502)
 **Fig.8**
 
 > **❓ Questions**
 >
-> **Q1.1: What are the genomic coordinates for *B4GALNT1* gene?**  
-> **Q1.2: On which chromosome arm is the *RASAL1* gene located?**  
+> **Q1.1: What are the genomic coordinates for *B4GALNT1* gene?**
+> **Q1.2: How many exons are there in the main *B4GALNT1* transcript NM_001276468.2?**
+> **Q1.3: On which chromosome arm is the *RASAL1* gene located?**  
 
 **Enter the genomic coordinate: chr6:150209805**
 
 > **❓ Questions**
 > 
-> **Q1.3: Is a variant reported at this position? If so, what type of variant is it (SNV or InDels)?**  
-> **Q1.4: If any variant is present, what do you think about it? Can be considered true or not? Why?**  
+> **Q1.4: Is a variant reported at this position? If so, what type of variant is it (SNV or InDels)?**  
+> **Q1.5: If any variant is present, what do you think about it? Can be considered true or not? Why?**  
 
 > _**NOTE**_  
 > Look at the sequence of the reference genome close to the entered position!! 
@@ -127,45 +129,45 @@ At each base that the read sequence mismatches the reference, IGV uses color m
 
 > **❓ Questions**  
 > 
-> **Q1.5: There are many variants in this region. What are the allelic fractions of variants inside the region? Are the allelic fractions suggestive of real heterozygous variants?**  
+> **Q1.6: There are many variants in this region. What are the allelic fractions of variants inside the region? Are the allelic fractions suggestive of real heterozygous variants?**  
 
 Although most of the reads is gray, some are entirely displayed in different colors. You can click on any read to visualize its mapping quality among other features of the read and its mate.  
 
 > **❓ Questions**
 > 
-> **Q1.6: Do you notice some read with low mapping quality?**  
-> **Q1.7: What is their mapping quality?**  
-> **Q1.8: In conclusion, how would you consider these variants, as real or artifacts?**  
+> **Q1.7: Do you notice some read with low mapping quality?**  
+> **Q1.8: What is their mapping quality?**  
+> **Q1.9: In conclusion, how would you consider these variants, as real or artifacts?**  
 
 **Enter this genomic interval: chr8:7419310-7433920**  
 
 > **❓ Questions**  
 > 
-> **Q1.9: Considering the mapping quality of the reads, how would you describe this region?**  
-> **Q1.10: Look at variant chr8:7429933:C-T; how would you consider it, as real or artifacts?**  
+> **Q1.10: Considering the mapping quality of the reads, how would you describe this region?**  
+> **Q1.11: Look at position chr8:7429933; how would you consider the C>T variant, as real or artifacts?**  
 
 **Enter in the text box this genomic coordinate: chr12:6436665. Next, click on the gear icon to the right of the alignment track and choose "Show soft clips", to display soft clipped bases in different colors, and flag "Clour by: read strand", to distinguish reads by their orientation.** Red reads are in the forward orientation, and blue reads are in the reverse orientation.   
 
 > **❓ Questions**
 > 
-> **Q1.11: Click on coverage track in the entered position (between the center lines). How many reads support the alternative allele “C”?**  
-> **Q1.12: Is the “C” likely a valid SNV? What evidence suggests it is or isn’t?**  
-> **Q1.13: What is the name of the observed condition?**  
+> **Q1.12: Click on coverage track in the entered position (between the center lines). How many reads support the alternative allele “C”?**  
+> **Q1.13: Is the “C” likely a valid SNV? What evidence suggests it is or isn’t?**  
+> **Q1.14: What is the name of the observed condition?**  
 
 **Navigate to position: chr12:113565675**  
 
 > **❓ Questions**  
 >
-> **Q1.14: What is the genotype of the proband here?**  
-> **Q1.15: Is the “A” likely a valid SNV? What evidence suggests it is or isn’t?**  
+> **Q1.15: What is the genotype of the proband here?**  
+> **Q1.16: Is the “A” likely a valid SNV? What evidence suggests it is or isn’t?**  
 
 **Navigate to position: chr12:58022561**  
  
 > **❓ Questions**
 >
-> **Q1.16: What is the coverage in this position and what is the genotype of proband?**  
-> **Q1.17: Assuming that the proband has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has a compatible genotype?**  
-> **Q1.18: What do you think is the disease phenotype potentially associated with this SNV (chr12:58022561-C-T)?**  
+> **Q1.17: What is the coverage in this position and what is the genotype of proband?**  
+> **Q1.18: Assuming that the proband has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has a compatible genotype?**  
+> **Q1.19: What do you think is the disease phenotype potentially associated with this SNV (chr12:58022561-C-T)?**  
 
 > _**NOTE**_  
 >  You can open an Internet browser and go to [OMIM database](https://www.omim.org/) to see the diseases associated with the gene of interest.  
@@ -213,7 +215,7 @@ We can assume that the mutation causing the disease occurs **de novo** in our pr
 
 > **❓ Questions**  
 >
-> **Q2.5: How would you describe this variant at the DNA level? Specify chromosome, start postion, end position, reference nucleotide, and alternative nucleotide**
+> **Q2.5: How would you describe this variant at the DNA level? Specify chromosome, start postion, end position, reference nucleotide, and alternative nucleotide**  
 > **Q2.6: What is the population allele frequency and its protein consequence?**  
 > **Q2.7: What is the mother, father, and proband's genotype?**  
 > **Q2.8: Are the genotypes compatible with the disease described in this family (NFLE)? Why?**  
@@ -256,5 +258,5 @@ In this exercise we will use the Variant Effect Predictor (VEP) software, which 
 > **Q2.9: What is the standard nomenclature for the mutations at both the cDNA and protein levels in the canonical transcript?**  
 > **Q2.10: What is the effects predicted by Polyphen2?**  
 > **Q2.11: What do you think is the variant that shows the highest impact?**  
-> **Q2.12: What is its associated phenotype?**
+> **Q2.12: What is its associated phenotype?**  
 > **Q2.13: In conclusion, do you think that the variant causing the disease in our family has been identified?**  
