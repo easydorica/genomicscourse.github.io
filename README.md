@@ -81,27 +81,27 @@ IGV will look up the genomic coordinates for the gene (Fig.4) and set the viewin
 **Fig.4**
 
 Here is a quick summary of the generic information displayed in IGV:
-1. In the navigation box we now find the **genomic coordinates** of the gene.
-2. **Chromosome ideogram**. The red bar on the chromosome ideogram indicates the position of the gene along the chromosome.  
+- 1. In the navigation box we now find the **genomic coordinates** of the gene.
+- 2. **Chromosome ideogram**. The red bar on the chromosome ideogram indicates the position of the gene along the chromosome.  
 
 ![Fig.5](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/7398e5e9-9d6c-467b-b118-735feca6be6d)
 **Fig.5**
 
-3. **Coverage track**. The coverage track displays the depth of the reads at each position as a grey bar chart; e.g. if the coverage of a genomic position is 100X , this means the base was sequenced 100 times.
+- 3. **Coverage track**. The coverage track displays the depth of the reads at each position as a grey bar chart; e.g. if the coverage of a genomic position is 100X , this means the base was sequenced 100 times.
 View count details of a position by clicking over the coverage bar. The box that appears provides further information for the position taken in consideration. In the example in Fig.6, there are 302 reads and all nucleotides at this position are “T”.
 If a nucleotide differs from the reference sequence in the reads, IGV colors the bar in proportion to the read count of each base (A=green, C=blue, G=orange, T=red). If a sufficient number of mismatches pile up on the same position, the corresponding bar in the coverage profile suggests the presence of a variant, showing the colors of both alleles proportional to the respective allelic fractions. As an example, **go to position chr12:113537773. You can see how C>T mismatches pile up on this position. Click on the corresponding bar in the coverage profile. You can see how C and T fractions are well balanced (C=47% and T=53%), suggesting a possible heterozygous variant. Go then to position chr12:40869452. Here, a G>T mismatch is present on the 100% of the reads, consistent with a possible homozygous variant.**  
 
 ![Fig.6](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/98722810-eb5c-4601-b568-cf32428b45ef)
 **Fig.6**
 
-4. This section give an overview of the **alignment track**. The reads are represented by grey bars stacked on top of each other, where they are aligned to the reference genome. The reads are pointed to indicate their orientation (i.e. the forward strand or the reverse strand). 
+- 4. This section give an overview of the **alignment track**. The reads are represented by grey bars stacked on top of each other, where they are aligned to the reference genome. The reads are pointed to indicate their orientation (i.e. the forward strand or the reverse strand). 
 Reads that are displayed with light grey borders and transparent or in other colors, have bad mapping quality. 
 At each base that the read sequence mismatches the reference, IGV uses color markers to highlight potential genetic alterations in reads against a reference sequence. By clicking over a specific grey bar you can obtain additional information about the specific read: the read name, alignment quality, CIGAR and information about its mate read. 
 
 ![Fig.7](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/3860b027-d078-4f13-9d80-62c5825f2798)
 **Fig.7**
 
-5. **Gene track**. Graphical representation of the gene. Genes are represented as lines and boxes. Lines represent intronic regions, and boxes represent exonic regions. The arrows indicate the direction/strand of transcription for the gene. When an exon box become narrower in height, this indicates a UTR. In this section can be loaded other annotation tracks (e.g. dbSNP database of common polymorphisms or Clinvar database for interpretations of clinical significance of variants)
+- 5. **Gene track**. Graphical representation of the gene. Genes are represented as lines and boxes. Lines represent intronic regions, and boxes represent exonic regions. The arrows indicate the direction/strand of transcription for the gene. When an exon box become narrower in height, this indicates a UTR. In this section can be loaded other annotation tracks (e.g. dbSNP database of common polymorphisms or Clinvar database for interpretations of clinical significance of variants)
 
 ![Fig.8](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/c1a42ad4-d906-43ad-817a-8adf56bd0502)
 **Fig.8**
@@ -210,14 +210,27 @@ We observe another variant within the same CHRNA4 gene. This variant is identifi
 
 > **❓ Questions**  
 >
-> **Q2.4:
+> **Q2.4: How would you describe this variant at the DNA level? Specify chromosome, start postion, end position, reference nucleotide, and alternative nucleotide**  
 > **Q2.5: What is the mother, father, and proband's genotype?**  
-> **Q2.6: Are the genotypes compatible with the disease described in this family? Why?**
+> **Q2.6: Are the genotypes compatible with the disease described in this family (NFLE)? Why?**  
 
 ||Genotype|Compatible (yes/no)| 
 |:---:|---:|:---| 
 |**proband**||| 
 |father||| 
 |mother||| 
+
+In order to be able to study the mutations and evaluate their effect on the protein, and thus the possible link to the disease under investigation, we need to know their location on the mRNA and protein. Several methods can be used to do this, which is called the **variant annotation process**.  
+In this exercise we will use the Variant Effect Predictor (VEP) software, which from the genomic coordinates of a mutation, can give us a lot of information, in addition to its position in mRNA and protein.  
+
+**Open your browser and go to [VEP](http://grch37.ensembl.org/Homo_sapiens/Tools/VEP). Right-click on the link to open it in a new window.  
+Fill in the “Input” form as follows (Fig.10-.**  
+
+![Fig.10](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/870c508c-2f20-4322-83e8-ed241bbb4121)
+**Fig.10**
+
+> _**NOTE**_  
+> In the “Either paste data” field, write the genomic coordinates (one per line) of the two *CHRNA4* variants reported in the previous steps of the exercise, with the following formatting:  
+> chromosome [space] start position [space] end position [space] reference/alternative (e.g. 1 818046 818046 T/C).
 
 
