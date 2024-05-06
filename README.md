@@ -1,7 +1,7 @@
 # <code style="color : blue">SNVs/Indels inspection from exome sequencing data</code>  
 
-Federica Isidori (bosco@aosp.bo.it)  
-Computational Genomics, IRCCS Azienda Ospedaliero-Universitaria di Bologna  
+**Federica Isidori (bosco@aosp.bo.it)  
+Computational Genomics, IRCCS Azienda Ospedaliero-Universitaria di Bologna**  
 ---
 
 Medical Genomics, Bachelor Degree in Genomics, University of Bologna  
