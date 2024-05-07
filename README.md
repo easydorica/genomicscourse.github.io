@@ -96,8 +96,9 @@ If a nucleotide differs from the reference sequence in the reads, IGV colors the
 **Fig.6**  
 
 [4] This section give an overview of the **alignment track**. The reads are represented by grey bars stacked on top of each other, where they are aligned to the reference genome. The reads are pointed to indicate their orientation (i.e. the forward strand or the reverse strand). 
-Reads that are displayed with light grey borders and transparent or in other colors, have bad mapping quality. 
-At each base that the read sequence mismatches the reference, IGV uses color markers to highlight potential genetic alterations in reads against a reference sequence. By clicking over a specific grey bar you can obtain additional information about the specific read: the read name, alignment quality, CIGAR and information about its mate read. Scroll down to see all the alligned reads.  
+Reads that are displayed with light grey borders and transparent or in other colors, have bad mapping quality or other alignemnt problems (e.g. read pairs where one read maps successfully and the other fails to map, maps in the same orientation, or maps too far from the first one). By clicking over a specific grey bar you can obtain additional information about the specific read: the read name, alignment quality, CIGAR and information about its mate read.
+At each base that the read sequence mismatches the reference, IGV uses color markers to highlight potential genetic alterations in reads against a reference sequence.  
+Scroll down to see all the alligned reads.  
 
 ![Fig.7](https://github.com/easydorica/genomicscourse.github.io/assets/89908049/3860b027-d078-4f13-9d80-62c5825f2798)
 **Fig.7**  
@@ -152,7 +153,7 @@ Although most of the reads is gray, some are entirely displayed in different col
 > 
 > **Q1.12: Click on coverage track in the entered position (between the center lines). How many reads support the alternative allele “C”?**  
 > **Q1.13: Is the “C” likely a valid SNV? What evidence suggests it is or isn’t?**  
-> **Q1.14: What is the name of the observed condition?**  
+> **Q1.14: What is the name of the phenomenon highlighted in this position?**  
 
 **Navigate to position: chr12:113565675**  
 
@@ -166,7 +167,7 @@ Although most of the reads is gray, some are entirely displayed in different col
 > **❓ Questions**
 >
 > **Q1.17: What is the coverage in this position and what is the genotype of proband?**  
-> **Q1.18: Assuming that the proband has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has a compatible genotype?**  
+> **Q1.18: Assuming that the proband from a consanguineous family has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has most probable genotype?**  
 > **Q1.19: What do you think is the disease phenotype potentially associated with this SNV (chr12:58022561-C-T)?**  
 
 > _**NOTE**_  
