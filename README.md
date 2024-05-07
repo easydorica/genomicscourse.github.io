@@ -167,7 +167,7 @@ Although most of the reads is gray, some are entirely displayed in different col
 > **❓ Questions**
 >
 > **Q1.17: What is the coverage in this position and what is the genotype of proband?**  
-> **Q1.18: Assuming that the proband from a consanguineous family has a recessive disorder, which one of the last two variants (chr12:113565675-G-A, chr12:58022561-C-T) has most probable genotype?**  
+> **Q1.18: Assuming that the proband from a consanguineous family has a rare recessive disorder, which of the two variants (chr12:113565675-G-A, chr12:58022561-C-T) has the most likely disease-causing genotype??**  
 > **Q1.19: What do you think is the disease phenotype potentially associated with this SNV (chr12:58022561-C-T)?**  
 
 > _**NOTE**_  
