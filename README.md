@@ -261,3 +261,10 @@ In this exercise we will use the Variant Effect Predictor (VEP) software, which 
 > **Q2.11: What do you think is the variant that shows the highest impact?**  
 > **Q2.12: What is its associated phenotype?**  
 > **Q2.13: In conclusion, do you think that the variant causing the disease in our family has been identified?**  
+
+
+---
+
+**DAY 2: <code style="color : magenta">Workshop CNV from Exome sequencing</code>**: Materials for this practical section are in the following folder: [CNVs_exome](https://drive.google.com/file/d/1pGR42_SWF3gt4XEmvc8ScgFiSRvPStho/view).
+
+
